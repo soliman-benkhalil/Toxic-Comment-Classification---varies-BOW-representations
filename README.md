@@ -106,7 +106,7 @@ Comprehensive 9-step preprocessing pipeline:
 - Greater control over representation details
 
 ### Manual Normalization Test
-- Implemented L2 normalization on Sklearn Count representation
+- Implemented L1 normalization on Sklearn Count representation or just  X = X / X.sum(axis=1)
 - Tested whether explicit normalization improves performance
 - **Result:** Surprisingly degraded performance (87.76% → 85.82%)
 
@@ -243,7 +243,3 @@ Contributions welcome! Areas for improvement:
 - Alternative preprocessing techniques
 - Cross-validation implementation
 - Detailed error analysis
-
----
-
-**License:** MIT
